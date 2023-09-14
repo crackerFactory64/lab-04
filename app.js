@@ -31,3 +31,13 @@ function displayGreeting(){
   }
 }
 
+function starRating(){
+  const userScore = parseInt(prompt("Are you enjoying this website? Please give a rating between 1 and 5."));
+  let stars = "";
+  let i = 0;
+  while (i < userScore){
+    stars += "⭐" + (i + 1);
+    i++;
+  }
+  document.write("Your rating: " + stars);
+}
