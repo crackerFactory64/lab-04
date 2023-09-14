@@ -1,4 +1,4 @@
-let userPhone = prompt("What phone do you use?");
+let userPhone = prompt("What phone brand do you use?");
 
 function reactToUserPhone(){
   if (userPhone == "" || userPhone == null){
