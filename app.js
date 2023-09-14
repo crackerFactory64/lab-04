@@ -1,14 +1,17 @@
 let userPhone = prompt("What phone do you use?");
 
-function getUserPhone(){
-  if (userPhone == "Samsung" || userPhone == "samsung") {
+function reactToUserPhone(){
+  if (userPhone == ""){
+    alert("Please enter a phone brand, this cannot be empty.")
+    location.reload();    
+  } else if (userPhone == "Samsung" || userPhone == "samsung") {
     alert("Snap!");
   } else {
     alert("Oh...");
   }
 }
 
-getUserPhone();
+reactToUserPhone();
 
 
 function displayUserPhone(){
